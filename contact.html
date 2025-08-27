@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sparkwise Solutions</title>
+    <meta name="description"
+        content="Get in touch with Sparkwise Solutions for your industrial automation software needs. Request a quote or consultation today.">
+    <link rel="canonical" href="https://sparkwise-solutions.com/contact.html">
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sparkwise-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://sparkwise-solutions.com/contact.html"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">Sparkwise Solutions</a>
+            </div>
+
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary nav__cta">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Get in Touch</h1>
+                <p class="page-header__subtitle">Have a project in mind? Let’s discuss how we can help.</p>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact section">
+            <div class="container">
+                <div class="contact__content">
+                    <!-- Contact Info -->
+                    <div class="contact__info">
+                        <h2 class="contact__title">Contact Information</h2>
+                        <p class="contact__description">We’re here to support your automation and software needs. Reach
+                            out to us today.</p>
+
+                        <!-- Add FontAwesome CDN in your <head> -->
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact__icon">📧</div>
+                                <div class="contact__text">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:hello@sparkwise-solutions.com">hello@sparkwise-solutions.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">📞</div>
+                                <div class="contact__text">
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:+918482894149">+91 8482894149</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">📍</div>
+                                <div class="contact__text">
+                                    <h3>Location</h3>
+                                    <p>
+                                        <a href="https://www.google.com/maps?q=VH46+VX2, Gaon Bhag, Sangli, Sangli Miraj Kupwad, Maharashtra 416416"
+                                            target="_blank">
+                                            Near Vithhal Mandir, Gaon Bhag, Sangli
+                                        </a>
+                                        <br>Remote services worldwide
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">🕒</div>
+                                <div class="contact__text">
+                                    <h3>Hours</h3>
+                                    <p>Mon - Fri <br>8:00 AM - 6:00 PM IST</p>
+                                    <p id="open-status"></p>
+
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp Contact -->
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fab fa-whatsapp"
+                                        style="color: #25D366; margin-left: 25%;"></i></div>
+                                <div class="contact__text">
+                                    <h3>WhatsApp</h3>
+                                    <p><a href="https://wa.me/918482894149" target="_blank">+91 8482894149</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Download Company Profile -->
+                        <div class="contact__download">
+                            <h3>Company Profile</h3>
+                            <p>Learn more about our expertise and past projects.</p>
+                            <a href="#company-profile.pdf" class="btn btn--secondary" target="_blank">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form">
+                        <form id="contactForm" class="form" novalidate>
+                            <div class="form__group">
+                                <label for="name" class="form__label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form__input" required>
+                                <div class="form__error" id="nameError"></div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form__input" required>
+                                <div class="form__error" id="emailError"></div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="company" class="form__label">Company</label>
+                                <input type="text" id="company" name="company" class="form__input">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="projectType" class="form__label">Project Type *</label>
+                                <select id="projectType" name="projectType" class="form__input form__select" required>
+                                    <option value="">Select project type</option>
+                                    <option value="web">Web Application</option>
+                                    <option value="desktop">Desktop Application</option>
+                                    <option value="mobile">Mobile Application</option>
+                                    <option value="ai">AI Solution</option>
+                                    <option value="integration">System Integration</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="form__error" id="projectTypeError"></div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="budget" class="form__label">Budget Range</label>
+                                <select id="budget" name="budget" class="form__input form__select">
+                                    <option value="">Select budget</option>
+                                    <option value="under-25k">Under $25,000</option>
+                                    <option value="25k-100k">$25,000 - $100,000</option>
+                                    <option value="100k-250k">$100,000 - $250,000</option>
+                                    <option value="250k-500k">$250,000 - $500,000</option>
+                                    <option value="over-500k">Over $500,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">Project Details *</label>
+                                <textarea id="message" name="message" rows="6" class="form__input form__textarea"
+                                    placeholder="Tell us about your project..." required></textarea>
+                                <div class="form__error" id="messageError"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--large form__submit">Send Message</button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="formSuccess" class="form__success" style="display: none;">
+                            <div class="success-message">
+                                <div class="success-icon">✓</div>
+                                <h3>Thank you!</h3>
+                                <p>Your message has been received. We’ll get back to you within 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="contact-info section section--bg">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Why Choose Us?</h2>
+                </div>
+
+                <div class="grid grid--3">
+                    <div class="info-card">
+                        <div class="info-card__icon">🎯</div>
+                        <h3 class="info-card__title">Expertise</h3>
+                        <p class="info-card__description">Strong knowledge of industrial automation and AI solutions.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card__icon">⚡</div>
+                        <h3 class="info-card__title">Quick Response</h3>
+                        <p class="info-card__description">We respond to all inquiries within 24 hours.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card__icon">🛡️</div>
+                        <h3 class="info-card__title">Trusted Results</h3>
+                        <p class="info-card__description">50+ successful projects with measurable impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__brand">
+                        <h3 class="footer__logo">Sparkwise Solutions</h3>
+                        <p class="footer__description">Leaders in IT solutions for industrial automation. We provide
+                            comprehensive software solutions that power modern manufacturing and industrial operations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html#web">Web Applications</a></li>
+                        <li><a href="services.html#desktop">Desktop Apps</a></li>
+                        <li><a href="services.html#mobile">Mobile Apps</a></li>
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact Info</h4>
+                    <div class="footer__contact">
+                        <p>📧 hello@sparkwise-solutions.com</p>
+                        <p>
+                            📞 <a href="tel:+918482894149" style="color:#ffffff; text-decoration:none;">
+                                +91 84828 94149
+                            </a>
+                        </p>
+
+
+                        <p style="font-size: 16px; color: #ffffff;">
+                            📍
+                            <a href="https://www.google.com/maps?q=VH46+VX2, Gaon Bhag, Sangli, Sangli Miraj Kupwad, Maharashtra 416416"
+                                target="_blank" style="color: #ffffff; text-decoration: none;">
+                                Near Vithhal Mandir, Gaon Bhag, Sangli
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2025 Sparkwise Solutions. All rights reserved.</p>
+                </div>
+                <div class="footer__legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" style="display: none;">↑</button>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function checkOpenStatus() {
+            const now = new Date();
+
+            // Get UTC time
+            const utcHour = now.getUTCHours();
+            const utcMinutes = now.getUTCMinutes();
+            const utcDay = now.getUTCDay();
+
+            // Convert to IST (UTC + 5:30)
+            let istHour = utcHour + 5;
+            let istMinutes = utcMinutes + 30;
+
+            if (istMinutes >= 60) {
+                istMinutes -= 60;
+                istHour += 1;
+            }
+            if (istHour >= 24) istHour -= 24;
+
+            // Adjust day if rollover
+            let istDay = utcDay;
+            if (utcHour + (utcMinutes / 60) + 5.5 >= 24) {
+                istDay = (istDay + 1) % 7;
+            }
+
+            // Business hours: Mon-Fri, 8 AM - 6 PM IST
+            const isWeekday = istDay >= 1 && istDay <= 5;
+            const isOpenHours = istHour >= 8 && (istHour < 18 || (istHour === 18 && istMinutes === 0));
+
+            const status = document.getElementById("open-status");
+            if (isWeekday && isOpenHours) {
+                status.textContent = "✅ Open Now";
+                status.style.color = "green";
+            } else {
+                status.textContent = "❌ Closed Now";
+                status.style.color = "red";
+            }
+        }
+
+        checkOpenStatus();
+    </script>
+</body>
+
+</html>
